@@ -1,7 +1,11 @@
+import Landing from "@/src/components/modules/home/Landing";
+import RecentPost from "@/src/components/modules/home/RecentPost";
+
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <h1>Found X</h1>
-    </section>
+    <div>
+      <Landing />
+      <RecentPost />
+    </div>
   );
 }

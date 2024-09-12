@@ -13,8 +13,8 @@ import clsx from "clsx";
 import NextLink from "next/link";
 
 import { Logo } from "@/src/components/icons";
-import { ThemeSwitch } from "@/src/components/theme-switch";
-import { siteConfig } from "../config/site";
+import { ThemeSwitch } from "@/src/components/UI/theme-switch";
+import { siteConfig } from "../../config/site";
 
 export const Navbar = () => {
   return (
@@ -67,8 +67,8 @@ export const Navbar = () => {
                   index === 2
                     ? "primary"
                     : index === siteConfig.navMenuItems.length - 1
-                    ? "danger"
-                    : "foreground"
+                      ? "danger"
+                      : "foreground"
                 }
                 href="#"
                 size="lg"
